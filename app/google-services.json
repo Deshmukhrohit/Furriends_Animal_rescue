@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "333478626844",
+    "project_id": "login-p-1149c",
+    "storage_bucket": "login-p-1149c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:333478626844:android:e4737a62d5af54b5d041d9",
+        "android_client_info": {
+          "package_name": "com.example.furriends"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "333478626844-cvu677sqnb71nbfjnc00et65vpqaqc4l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsNtQUQhHnbYya3tlH2V5D_UvYNsDv3bg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "333478626844-cvu677sqnb71nbfjnc00et65vpqaqc4l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_support"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/text_support"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Support"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <View
+        android:id="@+id/divider_support"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/text_support"
+        android:background="@color/grey"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        />
+
+    <TextView
+        android:id="@+id/text_support_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Our app is dedicated to the rescue of animals in need. We strive to provide a safe and nurturing environment for all animals, and help find them forever homes. Contact us for any support or queries."
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/divider_support"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <TextView
+        android:id="@+id/text_support_contact_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Us:"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/text_support_description"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/text_support_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7024315162"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_toEndOf="@id/text_support_contact_title"
+        android:layout_alignBaseline="@id/text_support_contact_title"/>
+
+    <TextView
+        android:id="@+id/text_support_address_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address:"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/text_support_contact_title"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/text_support_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Juhu, Mumbai"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_toEndOf="@id/text_support_address_title"
+        android:layout_alignBaseline="@id/text_support_address_title"/>
+
+</RelativeLayout>

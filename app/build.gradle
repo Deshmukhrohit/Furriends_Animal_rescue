@@ -1,0 +1,65 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+    id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
+}
+
+android {
+    namespace 'com.example.furriends'
+    compileSdkVersion 33
+
+    defaultConfig {
+        applicationId "com.example.furriends"
+        minSdk 26
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        viewBinding true
+    }
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.7.0-alpha01'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.firebase:firebase-auth:21.1.0'
+    implementation 'com.google.firebase:firebase-firestore:24.4.4'
+    implementation 'com.google.firebase:firebase-storage:20.1.0'
+    implementation 'androidx.wear.tiles:tiles-material:1.1.0-alpha04'
+    implementation 'com.google.firebase:firebase-inappmessaging:20.3.1'
+    implementation 'com.google.firebase:firebase-database:20.1.0'
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
+    implementation 'com.google.androidbrowserhelper:androidbrowserhelper:2.3.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    implementation 'com.android.volley:volley:1.2.1'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.2.0-rc03'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.2.0-rc03'
+        implementation 'com.google.android.gms:play-services-maps:17.0.0'
+        implementation 'com.google.android.gms:play-services-location:18.0.0'
+    implementation 'com.google.maps:google-maps-services:0.11.0'
+    implementation 'androidx.databinding:databinding-runtime:4.3.1'
+
+}
